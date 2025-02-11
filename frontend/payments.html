@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>To‘lovlar</title>
+    <script src="payments.js" defer></script>
+</head>
+<body>
+
+<h2>Ishchilar uchun to‘lovlar</h2>
+<ul id="payments"></ul>
+
+<h3>Yangi to‘lov qo‘shish</h3>
+<form id="addPaymentForm">
+    <input type="number" name="worker_id" placeholder="Ishchi ID" required>
+    <input type="number" name="amount" placeholder="To‘lov miqdori" required>
+    <input type="date" name="payment_date" required>
+    <button type="submit">Qo‘shish</button>
+</form>
+
+</body>
+</html>
