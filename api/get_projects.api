@@ -1,0 +1,12 @@
+<?php
+include "../config.php";
+
+$query = "SELECT * FROM projects";
+$result = mysqli_query($conn, $query);
+
+$projects = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $projects[] = $row;
+}
+echo json_encode($projects);
+?>
